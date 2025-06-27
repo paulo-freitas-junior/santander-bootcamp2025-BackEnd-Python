@@ -8,7 +8,7 @@
 </br>
 
 ---
-### Detalhes do bootcamp
+### Detalhes do Bootcamp
 
 **Desenvolver desde conceitos básicos até estruturas básicas**
 - Manipulação de dados
@@ -29,7 +29,7 @@
 
 **Distribuído em 29 cursos, 06 desafios de projetos separados em 8 tópicos:**
 
-1. Pincípíos de desenvolvimento de aplicações Python
+1. Pincípios de desenvolvimento de aplicações Python
 2. Operadores e manipulação de string com Python
 3. Estrutura de dados e listas com Python
 4. Trabalhando com funções em Python
@@ -39,6 +39,6 @@
 8. Desenvolvimento  orientado a testes com Python
 
 ---
-### Projetos desenvolvidos
+### Projetos Desenvolvidos
 
 < em construção >
