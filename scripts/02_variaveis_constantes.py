@@ -24,3 +24,9 @@ print(f'Debug está {"ativado" if DEBUG else "desativado"} e os estados são: {"
 # Em Python, podemos usar strings para representar caminhos de diretórios.
 PATH = '/home/paulo/projetos/python'  
 print(f'O caminho do projeto é {PATH}.')
+
+# Usando variáveis em expressões
+preco = 100.0
+desconto = 0.1
+preco_final = preco * (1 - desconto)
+print(f'O preço final com desconto é {preco_final:.2f}.')

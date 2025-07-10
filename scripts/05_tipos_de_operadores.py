@@ -80,7 +80,7 @@ print('Saldo é igual ao limite?', saldo is limite)
 # Operadores de associação são usados para verificar se um valor está presente em uma sequência (como listas, tuplas, etc.).
 print('\n')
 curso  = "Curso de Python"
-frutas = ['laranja', 'uva', 'limão']
+frutas = ['laranja', 'uva', 'limão'] # Lista de strings
 saques = [1500, 100]
 print('A palavra "Python" está no curso?', 'Python' in curso)  # Verifica se 'Python' está em curso
 print('A fruta "maçã" NÃO está na lista de frutas?', 'maçã' not in frutas) # Verifica se 'maça' não está na lista de frutas
