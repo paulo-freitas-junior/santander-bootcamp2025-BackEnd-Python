@@ -90,3 +90,95 @@ else:
 # -- Ternário é uma forma compacta de escrever uma estrutura condicional simples
 status = 'Sucesso' if saldo >= saque else 'Saldo insuficiente'
 print(f'Status do saque: {status}')
+
+
+# Estruturas de Repetição
+#========================
+
+a = int(input('Informe um número inteiro: '))
+print(f'Você digitou {a}')
+a += 1
+print(f'Valor digitado + 1: {a}')
+a += 1
+print (f'Valor digitado + 2: {a}')
+
+
+# For
+# -- Estrutura de repetição que itera sobre uma sequência (como listas, tuplas, strings, etc.)
+texto = input('Informe um texto: ')
+VOGAIS = 'AEIOU'                        # Constante
+for letra in texto:
+    if letra.upper() in VOGAIS:
+        print(f'A letra digitada {letra} é uma vogal.')
+    else:
+        print(f'A letra digitada {letra} não é uma vogal.')
+print()
+
+
+# outro exemplo de for
+
+texto = input('Informe um texto: ')
+VOGAIS = 'AEIOU'                        # Constante
+for letra in texto:
+    if letra.upper() in VOGAIS:         # Verifica se a letra é uma vogal
+        print(letra, end=' ')           # Imprime as letras que são vogais
+print()
+
+# for usando a função range
+# range(start, stop, step) -> range de números
+# range(stop) -> range do object
+
+list(range(4)) # Cria uma lista de números de 0 a 3
+
+for numero in range(0,11):
+    print(numero, end=' ') # Imprime números de 0 a 10
+
+# exibindo a tabuada do 6
+for numero in range(1, 11):
+    print(f'6 x {numero} = {6 * numero}') # Imprime a tabuada do 6
+
+# exibindo a tabuada do 6 com start, stop e step
+for numero in range(0, 61, 6):
+    print(numero, end=' ') # Imprime números de 0 a 60 com passo de 6
+
+
+# While
+# -- Estrutura de repetição que continua enquanto uma condição for verdadeira
+opcao = -1
+while opcao != 0:
+    opcao = int(input('Informe uma opção: \n [1] Sacar \n [2] Extrato \n [0] Sair: '))
+
+    if opcao == 1:
+        print('Sacando...')
+    elif opcao == 2:
+        print('Exibindo o extrato...')
+else:
+    print('Obrigado por usar nosso sistema bancário.')
+
+
+# Exemplo de while com break
+while True:
+    numero = int(input('Informe uma opção: \n [1] Sacar \n [2] Extrato \n [0] Sair: '))
+
+    if numero == 0:
+        print('Saindo do sistema.')
+        break
+    elif numero == 1:
+        print('Sacando...')
+    elif numero == 2:
+        print('Exibindo o extrato...')
+    else:
+        print('Opção inválida. Digite uma opção válida!')
+
+# Exemplo de while com continue ( continue sempre vem após o break )
+while True:
+    numero = int(input('Informe um número de 1 a 10 (0 para sair): '))
+
+    if numero == 0:
+        print('Saindo do sistema')
+        break
+    elif numero < 1 or numero > 10:
+        print('Número inválido, tente novamente!')
+        continue
+    print(f'Você digitou o número {numero}.')
+
