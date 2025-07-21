@@ -89,7 +89,7 @@ Estou aprendendo a manipular strings e fatiamento.
 print(mensagem)
 
 # outro exemplo
- print("""
+print("""
 =============== MENU ===============
 1. Depositar
 2. Sacar
