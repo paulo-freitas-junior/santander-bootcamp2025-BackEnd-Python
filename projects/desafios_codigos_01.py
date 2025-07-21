@@ -21,19 +21,6 @@ else:
     print('Cupom inválido.')
 
 
-# Validador de formato de e-mails contendo '@' e domínio 'gmail.com' e 'outlook.com'
-def validar_email(email):
-    """
-    Valida o formato de um e-mail, verificando se contém '@' e um domínio válido.
-
-    Args:
-        email (str): O endereço de e-mail a ser validado.
-
-    Returns:
-        bool: True se o e-mail for válido, False caso contrário.
-    """
-    return '@' in email and (email.endswith('gmail.com') or email.endswith('outlook.com'))
-
 
 # Validador de formato de e-mails contendo '@' e domínio 'gmail.com' e 'outlook.com'
 #===================================================================================
