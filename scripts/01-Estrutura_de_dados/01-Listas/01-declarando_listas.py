@@ -104,3 +104,137 @@ for numero in numeros:
 numeros = [1, 30, 21, 2, 9, 65, 34]
 quadrado = [numero ** 2 for numero in numeros]
 print(quadrado)
+
+
+# MÉTODOS DA CLASSE LIST
+#===================================================
+
+# [].append - Inserir objetos dentro da lista
+# ----------------------------------------------
+lista = []
+
+lista.append(1)
+lista.append('Python')
+lista.append([40, 30, 20])
+
+print(lista)
+
+
+# [].clear - Limpar objetos dentro da lista
+# ---------------------------------------------
+lista = [1, 'Python', [40, 30, 20]]
+print(lista)
+
+lista.clear()
+print(lista)
+
+
+# [].copy - Gera uma cópia dos objetos existentes na lista
+# ---------------------------------------------------------
+lista = [1, 'Python', [40, 30 ,20]]
+
+lista2 = lista.copy()
+
+print(f'Conteúdo da lista: {lista}')
+print(f'Conteúdo da lista 2: {lista2}')
+print(f'Identificador da lista: ' + (str(id(lista))))
+print(f'Identificador da lista2: ' + (str(id(lista2))))
+
+
+# [].count - Conta número de vezes que um objeto aparece na lista
+# ---------------------------------------------------------------
+cores = ['vermelho','azul','verde','azul','amarelo']
+
+print(f'Vermelho aparece: {cores.count('vermelho')} vez(es) na lista')
+print(f'Azul aparece: {cores.count('azul')} vez(es) na lista')
+print(f'Verde aparece: {cores.count('verde')} vez(es) na lista')
+print(f'Amarelo aparece: {cores.count('amarelo')} vez(es) na lista')
+
+
+# [].extend - Adicionar elementos de OUTRA LISTA em uma lista existente
+# ---------------------------------------------------------------------
+linguagens = ['Python','Js','C']
+print(f'Lista das primeiras linguagens: {linguagens}')
+
+linguagens.extend(['Java','CSharp'])
+print(f'Lista atualizada das linguagens: {linguagens}')
+
+linguagens2 = ['SQL','R','Julia']
+linguagens.extend(linguagens2) # Adicionando nova lista na listagem 1
+print(f'Listas de linguagens1 + Linguagens2: {linguagens}')
+
+
+# [].index - Qual ocorrência de índice de determinado objeto
+# ----------------------------------------------------------
+
+linguagens =['Python','Js','C','Java','CSharp']
+print(f'Índice do objeto Python na lista é: {linguagens.index('Python')}')
+print(f'Índice do objeto Js na lista é: {linguagens.index('Js')}')
+print(f'Índice do objeto C na lista é: {linguagens.index('C')}')
+print(f'Índice do objeto Java na lista é: {linguagens.index('Java')}')
+print(f'Índice do objeto CSharp na lista é: {linguagens.index('CSharp')}')
+
+
+# [].pop - Remover objetos de uma lista à partir do último elemento ADICIONADO!
+# -----------------------------------------------------------------------------
+
+linguagens = ['Python','Js','C','Java','Csharp']
+print(f'Removendo Csharp da lista de linguagens: {linguagens.pop()}')
+print(f'Removendo Java da lista de linguagens: {linguagens.pop()}')
+print(f'Removendo Python da lista de linguagens usando índice: {linguagens.pop(0)}')
+
+
+# [].remove - Remove objetos específicos de uma lista
+# ---------------------------------------------------
+
+linguagens = ['Python','Js','C','Java','Csharp']
+print('Removendo a linguagem C da lista: ' + str(linguagens.remove('C')))
+print(f'Removendo a linguagem Java da lista: {linguagens.remove('Java')}')
+print(f'Linguagens restantes na lista: {linguagens}')
+
+
+# [].reverse - Realiza o espelhamento inverso dos objetos na lista
+# -----------------------------------------------------------------
+
+linguagens = ['Python','Js','C','Java','Csharp']
+linguagens.reverse()
+print(f'Lista de linguagens em ordem invertida: ' + str(linguagens))
+
+
+# [].sort - Ordenação dos objetos dentro da lista
+# -----------------------------------------------
+
+linguagens = ['Python','Js','C','Java','Csharp']
+linguagens.sort() # ordenação alfabética
+print(linguagens)
+
+linguagens = ['Python','Js','C','Java','Csharp']
+linguagens.sort(reverse=True) # ordenação alfabética invertida
+print(linguagens)
+
+linguagens = ['Python','Js','C','Java','Csharp']
+linguagens.sort(key=lambda x: len(x)) # ordenação por tamanho de objeto (menor para maior)
+print(linguagens)
+
+linguagens = ['Python','Js','C','Java','Csharp']
+linguagens.sort(key=lambda x: len(x), reverse=True) # ordenação por tamanho de objeto (maior para menor)
+print(linguagens)
+
+
+# [].len - Verifica o tamanho dos objetos dentro de uma lista
+# -----------------------------------------------------------
+
+linguagens = ['Python','Js','C','Java','Csharp']
+print(f' Existem {len(linguagens)} objetos dentro da lista de linguagens')
+
+
+# [].sorted - Ordenação de Interáveis em uma lista
+# ------------------------------------------------
+
+linguagens = ['Python','Js','C','Java','Csharp']
+print(sorted(linguagens, key=lambda x: len(x)))
+
+linguagens = ['Python','Js','C','Java','Csharp']
+print(sorted(linguagens, key=lambda x: len(x), reverse=True))
+
+
