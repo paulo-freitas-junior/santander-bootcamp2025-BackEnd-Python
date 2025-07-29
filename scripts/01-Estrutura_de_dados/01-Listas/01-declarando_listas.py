@@ -1,4 +1,6 @@
 # EXEMPLOS DE LISTAS EM PYTHON
+# Armazena de maneira sequencial qualquer tipo de objeto.
+# Usando o construtor "list" ou declarando direto na variável.
 #=================================
 
 frutas =['laranja', 'maçã', 'uva', 'pera']
@@ -6,20 +8,21 @@ frutas =['laranja', 'maçã', 'uva', 'pera']
 print(frutas)
 print(frutas[1]) # maçã
 print(frutas[3]) # pera
+
 # valores negativos
 print(frutas[-1]) # pera
 print(frutas[-4]) # laranja
 
-frutas = []
+frutas = [] # declaração de uma lista vazia
 print(frutas)
 
-letras = list('Python')
+letras = list('Python') # cada letra será um objeto específico (string é um elemento interável)
 print(letras)
 
-numeros = list(range(10))
+numeros = list(range(10)) # valores de 0-9
 print(numeros)
 
-carro = ['Ferrari', 'F8', 4200000, 2020, 2900, 'São Paulo', True]
+carro = ['Ferrari', 'F8', 4200000, 2020, 2900, 'São Paulo', True] # lista de atributos
 print(carro)
 
 
@@ -39,6 +42,9 @@ print(matriz[0][0]) # 1
 print(matriz[1][2]) # 4
 print(matriz[0][-1]) # 2
 print(matriz[-1][-1]) # c
+
+for linha in matriz: # a,3,5 (resultados da coluna de índice 1)
+    print(linha[1])
 
 
 # FATIAMENTO (SLICING)
