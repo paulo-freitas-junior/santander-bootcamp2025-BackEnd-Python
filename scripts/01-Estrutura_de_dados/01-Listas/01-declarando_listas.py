@@ -43,8 +43,8 @@ print(matriz[1][2]) # 4
 print(matriz[0][-1]) # 2
 print(matriz[-1][-1]) # c
 
-for linha in matriz: # a,3,5 (resultados da coluna de índice 1)
-    print(linha[1])
+for coluna in matriz: # a,3,5 (resultados da coluna de índice 1)
+    print(coluna[1])
 
 
 # FATIAMENTO (SLICING)
@@ -102,7 +102,7 @@ numeros = [1, 30, 21, 2, 9, 65, 34]
 quadrado = []
 
 for numero in numeros:
-    quadrado.append(numero * 2)
+    quadrado.append(numero ** 2)
     print(quadrado)
 
 
